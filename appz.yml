@@ -11,7 +11,7 @@ build:
     image_template: vault-1.2
 
 deploy:
-    context: niranjan-ragi/DEV
+    context: adhilcc/DEV
     type: statefulset
     ingress: none
     replicas: 1
