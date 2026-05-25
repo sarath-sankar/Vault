@@ -15,7 +15,7 @@ deploy:
     type: statefulset
     ingress: none
     replicas: 1
-    hardening: true
+    # hardening: true
     port:
     - 8200
     - 80
