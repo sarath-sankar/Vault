@@ -19,10 +19,6 @@ deploy:
     port:
     - 8200
     - 80
-    writable_paths:
-    - /usr/local/tomcat/logs
-    - /usr/local/tomcat/work
-    - /usr/local/tomcat/temp
 
 volumes:
   - claim: vault-home
