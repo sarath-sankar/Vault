@@ -15,10 +15,14 @@ deploy:
     type: statefulset
     ingress: none
     replicas: 1
-    # hardening: true
+    hardening: true
     port:
     - 8200
     - 80
+    writable_paths:
+    - /usr/local/tomcat/logs
+    - /usr/local/tomcat/work
+    - /usr/local/tomcat/temp
 
 volumes:
   - claim: vault-home
